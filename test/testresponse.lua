@@ -13,7 +13,7 @@ local function response()
 		for k,v in ipairs(response_queue) do
 			v(true, skynet.now())		-- true means succ, false means error
 			response_queue[k] = nil
-		end
+
 	end
 end
 
